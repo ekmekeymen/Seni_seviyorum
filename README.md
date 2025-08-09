@@ -1,0 +1,2 @@
+# Seni_seviyorum
+yok
