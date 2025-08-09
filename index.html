@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+        <title>>Tıklasana!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="text">
+            <button id="tiklaBtn" onclick="handleClick()">Tıklasana😉</button>
+        </div>
+        <script>
+            const tikla = document.getElementById("handleClick()");
+         function handleClick(){
+                document.body.innerHTML = "";
+
+                
+                
+                const tikla = document.createElement("h1");
+                tikla.textContent = "❤Seni Seviyorum❤"
+                
+                tikla.style.justifyContent = "center";
+                tikla.style.alignItems = "center";
+                tikla.style.margin = "0";
+                tikla.style.display = "flex";
+                tikla.style.height = "100vh";
+                tikla.fontFamily = "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif";
+                tikla.style.color = "black"
+
+                document.body.appendChild(tikla);
+
+                 confetti({
+                         particleCount: 200,
+                             spread: 120,
+                                origin: { y: 0.6 }
+                            });
+                         
+         }
+         </script>
+    </body>
+</html>
